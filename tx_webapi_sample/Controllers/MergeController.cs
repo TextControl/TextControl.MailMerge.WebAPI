@@ -3,7 +3,7 @@
 ** file:        MergeController.cs
 ** description:	This file contains the controller for the Merge Web API
 **
-** version:		TXTextControl 22.0
+** version:		TX Text Control 22.0
 ** author:      B. Meyer
 **-----------------------------------------------------------------------*/
 using Newtonsoft.Json;
@@ -25,12 +25,12 @@ namespace tx_webapi_sample.Controllers
         ** Post method
         ** // POST api/merge?format=[PDF|PDFA|DOCX|DOC]
         **---------------------------------------------------------------*/
-        public Results Post([FromBody]dynamic mailMergeRequestObject,
+        public ResponseResults Post([FromBody]dynamic mailMergeRequestObject,
             [FromUri]string format)
         {
             // create a new Results object that contains the 
             // resulting document as a byte[]
-            Results results = new Results();
+            ResponseResults results = new ResponseResults();
 
             // helper object of type 'MailMergeRequestObject' to extract the
             // JSON data (template and data)
