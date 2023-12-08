@@ -3,7 +3,7 @@
 ** file:        MergeController.cs
 ** description:	This file contains the controller for the Merge Web API
 **
-** version:		TX Text Control 31.0
+** version:		TX Text Control 22.0
 ** author:      B. Meyer
 **-----------------------------------------------------------------------*/
 using Newtonsoft.Json;
